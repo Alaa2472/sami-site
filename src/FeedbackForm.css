@@ -1,0 +1,133 @@
+.form-container {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: black;
+    
+  }
+  
+  .popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+  }
+  
+  .close-popup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  #feedbackButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #feedbackButton:hover {
+    background: #0056b3;
+  }
+
+
+  .form-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: auto;
+  }
+
+  h1 {
+    color: #4a90e2;
+  }
+
+  form label, .stars {
+    display: block;
+    margin: 15px 0;
+  }
+
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+
+  /* تصميم النجوم */
+  .stars {
+    direction: rtl; /* لعرض النجوم من اليمين إلى اليسار */
+    unicode-bidi: bidi-override;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .stars input {
+    display: none;
+  }
+
+  .stars label {
+    font-size: 2rem;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+
+  .stars input:checked ~ label,
+  .stars label:hover,
+  .stars label:hover ~ label {
+    color: #f39c12; /* لون النجمة عند التحديد أو التمرير */
+  }
+
+  button {
+    background: #4a90e2;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+  }
+
+  button:hover {
+    background: #357abd;
+  }
+
+  /* رسالة التقييم */
+  #ratingMessage {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: bold;
+  }
+
+  
+  #feedbackForm {
+    display: none;
+  }

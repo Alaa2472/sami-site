@@ -1,0 +1,353 @@
+
+:root {
+    --primary-color: #2b6cb0;
+    --secondary-color: #ffffff;
+    --accent-color: #f56565;
+    --text-color: #2d3748;
+    --background-light: #f7fafc;
+    --gradient-start: #4299e1;
+    --gradient-end: #2b6cb0;
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+    line-height: 1.8;
+    color: var(--text-color);
+    background-color: var(--background-light);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(120deg, var(--gradient-start), var(--gradient-end));
+    padding: 1.5rem 0;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.logo {
+    max-width: 180px;
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1));
+}
+
+.logo:hover {
+    transform: scale(1.08) rotate(-2deg);
+}
+
+header p {
+    color: white;
+    text-align: center;
+    font-size: 1.3rem;
+    margin: 1rem 0;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+nav {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 1rem;
+    border-radius: 15px;
+    margin: 0.5rem 2rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+nav li {
+    position: relative;
+    opacity: 0;
+    transform: translateY(-10px);
+    animation: fadeInNav 0.5s ease forwards;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    position: relative;
+    overflow: hidden;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+}
+
+nav a i {
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+nav a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, rgba(255,255,255,0), rgba(255,255,255,0.2), rgba(255,255,255,0));
+    transform: translateX(-100%);
+    transition: transform 0.6s ease;
+}
+
+nav a:hover::before {
+    transform: translateX(100%);
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 3px;
+    background: #fff;
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+    border-radius: 3px;
+}
+
+nav a:hover::after {
+    width: 80%;
+}
+
+nav a:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+nav a:hover i {
+    animation: pulse 1s infinite;
+}
+
+nav a.active {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+@keyframes fadeInNav {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* تأخير التحميل عشان يحصل انميشن */
+nav ul li:nth-child(1) { animation-delay: 0.1s; }
+nav ul li:nth-child(2) { animation-delay: 0.2s; }
+nav ul li:nth-child(3) { animation-delay: 0.3s; }
+nav ul li:nth-child(4) { animation-delay: 0.4s; }
+nav ul li:nth-child(5) { animation-delay: 0.5s; }
+
+.hero {
+    background-color: white;
+    border-radius: 20px;
+    padding: 3rem;
+    margin: 3rem auto;
+    max-width: 1200px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+    animation: fadeIn 0.6s ease-out;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, var(--gradient-start), var(--gradient-end));
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.hero:hover::before {
+    opacity: 1;
+}
+
+.hero:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+
+.hero h2 {
+    color: var(--primary-color);
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.hero h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--gradient-start), var(--gradient-end));
+    border-radius: 2px;
+}
+
+.hero h3 {
+    color: #4a5568;
+    font-weight: 400;
+    line-height: 2;
+    font-size: 1.1rem;
+}
+
+.hero ul, .hero ol {
+    padding-right: 2.5rem;
+}
+
+.hero li {
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-right: 1rem;
+}
+
+.hero ul li::before {
+    content: "●";
+    color: var(--secondary-color);
+    position: absolute;
+    right: -1.5rem;
+    font-size: 1.2rem;
+    transform: scale(0);
+    animation: bulletAppear 0.4s forwards;
+}
+
+@keyframes bulletAppear {
+    to {
+        transform: scale(1);
+    }
+}
+
+/* تظبيط الروابط */
+.hero a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    padding: 0.5rem 1.2rem;
+    border-radius: 20px;
+    background-color: rgba(66, 153, 225, 0.1);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    display: inline-block;
+}
+
+.hero a:hover {
+    background-color: var(--secondary-color);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(66, 153, 225, 0.2);
+}
+
+/* تظبيططط الفوتر */
+footer {
+    background: linear-gradient(120deg, var(--gradient-start), var(--gradient-end));
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
+    position: relative;
+    overflow: hidden;
+}
+
+footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+}
+
+footer p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* الميديا كويري يافاشل ولاك مهمه */
+@media (max-width: 768px) {
+    nav {
+        margin: 0.5rem;
+        padding: 0.5rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    nav a {
+        justify-content: center;
+        padding: 1rem;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .hero {
+        margin: 1.5rem;
+        padding: 2rem;
+    }
+    
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+    
+    .hero h3 {
+        font-size: 1rem;
+    }
+}
+
+/* شي حلو خلك عارفه بيخلي السكرول ناعم  */
+html {
+    scroll-behavior: smooth;
+}
+
+/* شويه حاجات للتكست بتفيد */
+.hero p, .hero h3 {
+    max-width: 70ch;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* تحسينات إضافية للأداء */
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}

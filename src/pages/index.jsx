@@ -1,9 +1,9 @@
 import React from 'react'
-import '../App.css';
+import '../index.css';
 import Header from '../componnents/header';
 import Footer from '../componnents/footer';
 import { faStream, faHome, faBrain, faUserMd, faPodcast } from "@fortawesome/free-solid-svg-icons";
-import logo from './logo3.png'
+
 
 export default function Index() {
     const navLinks = [
@@ -16,7 +16,7 @@ export default function Index() {
   return (
     <>
     <Header
-      logoSrc={logo}
+      logoSrc={"logo3.png"}
       tagline="نافذتك لفهم النفس والعقل"
       navLinks={navLinks}
     />

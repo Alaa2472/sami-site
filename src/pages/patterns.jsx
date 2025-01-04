@@ -1,6 +1,5 @@
 import React from "react";
 import Footer from "../componnents/footer";
-import logo from "./logo3.png";
 import {
   faStream,
   faHome,
@@ -22,8 +21,8 @@ export default function Pattern() {
     <>
       <div lang="ar" dir="rtl">
         <Header
-          logoSrc={logo}
-          tagline="نافذتك لفهم النفس والعقل"
+      logoSrc={"logo3.png"}
+      tagline="نافذتك لفهم النفس والعقل"
           navLinks={navLinks}
         />
       </div>

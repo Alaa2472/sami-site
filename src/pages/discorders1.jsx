@@ -1,6 +1,5 @@
 import React from 'react'
 import Footer from '../componnents/footer'
-import logo from './logo3.png'
 import { faStream, faHome, faBrain, faUserMd, faPodcast } from "@fortawesome/free-solid-svg-icons";
 import Header from "../componnents/header";
 
@@ -15,7 +14,7 @@ import Header from "../componnents/header";
   return (
    <>
    <Header
-      logoSrc={logo}
+      logoSrc={"logo3.png"}
       tagline="نافذتك لفهم النفس والعقل"
       navLinks={navLinks}
     />

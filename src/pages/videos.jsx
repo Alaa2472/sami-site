@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo3.png'
 import { faStream, faHome, faBrain, faUserMd, faPodcast } from "@fortawesome/free-solid-svg-icons";
 import Header from "../componnents/header";
 
@@ -14,7 +13,7 @@ function VideoSection() {
   return (
     <>
 <Header
-      logoSrc={logo}
+      logoSrc={"logo3.png"}
       tagline="نافذتك لفهم النفس والعقل"
       navLinks={navLinks}
     />

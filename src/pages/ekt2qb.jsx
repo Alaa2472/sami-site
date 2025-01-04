@@ -4,7 +4,6 @@ import '../App.css';
 import Footer from '../componnents/footer';
 import Header from "../componnents/header";
 import { faStream, faHome, faBrain, faUserMd, faPodcast } from "@fortawesome/free-solid-svg-icons";
-import logo from './logo3.png'
 
 
 export default function ekt2qb() {
@@ -18,7 +17,7 @@ export default function ekt2qb() {
   return (
     <>
       <Header
-      logoSrc={logo}
+      logoSrc={"logo3.png"}
       tagline="نافذتك لفهم النفس والعقل"
       navLinks={navLinks}
     />

@@ -1,6 +1,7 @@
 import React from 'react';
 import { faStream, faHome, faBrain, faUserMd, faPodcast } from "@fortawesome/free-solid-svg-icons";
 import Header from "../componnents/header";
+import Footer from '../componnents/footer';
 
 
 function PodcastSection() {
@@ -119,6 +120,7 @@ function PodcastSection() {
         </form>
       </section>
     </main>
+    <Footer/>
     </>
 
   );

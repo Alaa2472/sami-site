@@ -1,18 +1,33 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../App.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Header = ({ logoSrc, tagline, navLinks }) => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <header>
       <div className="container">
-        <div className="logo-container">
-          <img src={logoSrc} alt="Logo" />
+        {/* الشعار + الوصف + البرجر في صف واحد */}
+        <div className="header-top">
+          <img className="logo" src={logoSrc} alt="Logo" />
+          <p>{tagline}</p>
+          <button
+            onClick={toggleMenu}
+            className="menu-toggle"
+            aria-label="Toggle menu"
+          >
+            ☰
+          </button>
         </div>
-        <p>{tagline}</p>
+        {/* القائمة */}
         <nav>
-          <ul>
+          <ul className={isMenuOpen ? "active" : ""}>
             {navLinks.map((link, index) => (
               <li key={index}>
                 <Link to={link.path}>
@@ -26,4 +41,5 @@ const Header = ({ logoSrc, tagline, navLinks }) => {
     </header>
   );
 };
+
 export default Header;

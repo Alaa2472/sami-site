@@ -1,3 +1,6 @@
+
+
+
 # نَفْس - Mental Health Platform
 
 <div dir="rtl">
@@ -37,3 +40,77 @@
 ```bash
 node.js >= 16.0.0
 npm >= 8.0.0
+```
+
+## 🚀 التثبيت والتشغيل
+
+1. استنساخ المشروع:
+```bash
+git clone https://github.com/yourusername/nafs-platform.git
+cd nafs-platform
+```
+
+2. تثبيت الاعتمادات:
+```bash
+npm install
+```
+
+3. تشغيل المشروع:
+```bash
+npm start
+```
+
+4. بناء نسخة الإنتاج:
+```bash
+npm run build
+```
+
+## 📁 هيكل المشروع
+
+```
+src/
+├── components/         # مكونات React الأساسية
+│   ├── footer.jsx
+│   ├── form.jsx
+│   ├── header.jsx
+│   ├── videos.jsx
+│   └── HeroSection.jsx
+├── pages/             # صفحات التطبيق
+│   ├── index.jsx
+│   ├── discorders1.jsx
+│   ├── ekt2qb.jsx
+│   ├── patterns.jsx
+│   ├── podcasts.jsx
+│   └── videos.jsx
+├── App.css           # التنسيقات الرئيسية
+├── App.jsx           # المكون الرئيسي
+└── index.js          # نقطة الدخول
+```
+
+## 🤝 المساهمة
+
+نرحب بالمساهمات! يرجى اتباع الخطوات التالية:
+
+1. Fork المشروع
+2. إنشاء فرع للميزة `git checkout -b feature/amazing-feature`
+3. Commit التغييرات `git commit -m 'Add amazing feature'`
+4. Push إلى الفرع `git push origin feature/amazing-feature`
+5. فتح Pull Request
+
+## 📝 الترخيص
+
+هذا المشروع مرخص تحت رخصة MIT - انظر ملف LICENSE.md للتفاصيل
+
+## 📞 التواصل
+
+- البريد الإلكتروني: your.email@example.com
+- تويتر: [@YourTwitterHandle](https://twitter.com/YourTwitterHandle)
+- موقع المشروع: [https://nafs-platform.com](https://nafs-platform.com)
+
+</div>
+
+---
+
+<div align="center">
+تم بناء هذا المشروع بكل ❤️ للمساهمة في تحسين الصحة النفسية في المجتمع العربي
+</div>

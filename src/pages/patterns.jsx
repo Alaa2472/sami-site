@@ -159,6 +159,10 @@ const Patterns = () => (
       tagline="نافذتك لفهم النفس والعقل"
           navLinks={navLinks}
         />
+        <section className="hero">
+        <h2>الأنماط الفكرية</h2>
+        <p>استمع إلى أفضل الحلقات التي تتناول موضوعات الصحة النفسية، تطوير الذات، والتوازن الحياتي.</p>
+      </section>
      <PatternsList patterns={patterns} />
       </div>
       <Footer />

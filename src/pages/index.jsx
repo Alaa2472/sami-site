@@ -36,7 +36,7 @@ export default function Index() {
                         <img src="https://i.pinimg.com/736x/6b/d5/84/6bd58447976cf7e39c5caab77146e924.jpg" alt="الأمراض النفسية"/>
                         <h3>الأمراض النفسية</h3>
                         <p>تعرف على أكثر الأمراض النفسية شيوعًا مثل الاكتئاب والقلق وأحدث طرق العلاج.</p>
-                        <a href="/discorders" class="btn">المزيد</a>
+                        <a href="/diseases" class="btn">المزيد</a>
                     </div>
                     <div class="topic">
                         <img src="https://i.pinimg.com/736x/06/f2/3b/06f23ba8d600723e6c8faf075a96d99c.jpg" alt="الأنماط الفكرية"/>

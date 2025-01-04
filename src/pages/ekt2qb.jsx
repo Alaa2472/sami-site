@@ -9,7 +9,7 @@ import { faStream, faHome, faBrain, faUserMd, faPodcast } from "@fortawesome/fre
 export default function ekt2qb() {
     const navLinks = [
         { path: "/", label: "الرئيسية", icon: faHome },
-        { path: "/discorders", label: "الأمراض النفسية", icon: faBrain },
+        { path: "/diseases", label: "الأمراض النفسية", icon: faBrain },
         { path: "/patterns", label: "الأنماط الفكرية", icon: faStream },
         { path: "/discorders", label: "الاضطرابات النفسية", icon: faUserMd },
         { path: "/podcasts", label: "البودكاستات", icon: faPodcast },

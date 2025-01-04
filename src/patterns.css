@@ -1,0 +1,85 @@
+/* تصميم الصفحة الرئيسية */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  /* الحاوية الرئيسية */
+  main {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* أنماط قائمة الأنماط */
+  .patterns-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  /* تصميم عنصر الأنماط */
+  .pattern-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .pattern-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .pattern-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  .pattern-item h3 {
+    font-size: 20px;
+    margin: 15px 0 10px;
+    color: #007bff;
+  }
+  
+  .pattern-item p {
+    font-size: 14px;
+    color: #666;
+    margin: 0 15px 10px;
+  }
+  
+  .pattern-item a {
+    display: inline-block;
+    margin: 10px 15px 15px;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.2s ease;
+  }
+  
+  .pattern-item a:hover {
+    background-color: #0056b3;
+  }
+  
+  /* تصميم النص عند عدم وجود بيانات */
+  .patterns-list p {
+    font-size: 16px;
+    color: #999;
+  }
+  
+  /* العناوين العامة */
+  h1 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+  }

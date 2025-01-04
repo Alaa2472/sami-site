@@ -6,6 +6,7 @@ import HomePage from './pages/index';
 import Patterns from './pages/patterns.jsx';
 import Podcasts from './pages/podcasts';
 import VideoSection from "./pages/videos.jsx";
+import Disease from "./pages/diseases.jsx";
 const App = () => {
   return (
     <BrowserRouter>
@@ -16,6 +17,7 @@ const App = () => {
         <Route path="/patterns" element={<Patterns />} />
         <Route path="/podcasts" element={<Podcasts />} />
         <Route path="/videos" element={<VideoSection />} />
+        <Route path="/diseases" element={<Disease />} />
       </Routes>
     </BrowserRouter>
   );

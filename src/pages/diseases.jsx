@@ -43,7 +43,7 @@ function Disease() {
                 <img src={podcast.img} alt={podcast.title} />
                 <h3>{podcast.title}</h3>
                 <p>{podcast.description}</p>
-                <a href="/" className="btn">المزيد</a>
+                <a href="/diseases" className="btn">المزيد</a>
               </div>
             ))}
           </div>
